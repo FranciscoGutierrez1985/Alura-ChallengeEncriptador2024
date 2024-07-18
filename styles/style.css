@@ -132,8 +132,13 @@ body{
     line-height: 36px;
 }
 
+#panel_oculto{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
 #boton_copia{
-    visibility: hidden;
     position: absolute;
     left:  1570px;
     top: 850px;
@@ -146,7 +151,16 @@ body{
 
 @media (max-width:2146px) {
     #panel_muestra{
-       left: 1100px
-
+       left: 1100px;
     }
+
+    #resultado{
+        left: 1100px;
+     }
+
+     #boton_copia{
+        left:1200px;
+    }
+
+
   }
