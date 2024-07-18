@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+   background-color: #e9e9e9;
+   width: 100%;
+   min-height: 100vh;
+}
+
+.logo{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+#area_de_texto{
+    text-transform: lowercase;
+    border: none;
+    resize: none;
+    background-color: #F3F5FC;
+    position: absolute ;
+    width: 577px;
+    height: 220px;
+    top: 250px;
+    left: 420px;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+}
+
+.texto_informativo{
+    position: relative;
+    left: 425px;
+    width: 300px;
+    top: 640px;
+    font-family: "Inter", sans-serif;
+}
+
+.botones_operativos{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    width: 680px;
+    height: 67px;
+    left: 420px;
+    top: 650px;
+}
+
+#boton_encripta{
+    background-color: #0A3871;
+    border-radius:20px; 
+    border: 1px;
+    width:  230px;
+    height: 50px;
+    color:#F6F6F6
+}
+
+#boton_desencripta{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-radius:20px; 
+    border: 1px solid ;
+    width:  230px;
+    height: 50px;
+}
+
+#panel_muestra{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    position: absolute;
+    height: 900px;
+    width: 400px;
+    left: 1470px;
+    top: 40px;
+}
+
+
+#imagen_muñeco{
+    position: relative;
+    padding: 0 32px 0 32px;
+    top:243px;
+    width: 100%;
+    height: 304px;
+}
+
+.panel_muestra_texto{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 600px;
+    align-items: center;
+    text-align: center;
+    gap: 16px
+
+}
+
+#panel__muestra__titulo{
+    font-family: "Inter" sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color:#343A40;
+}
+
+#panel__muestra__texto{
+    font-family: "Inter" normal;
+    font-size: 18px;
+    color: #0A3871;
+}
+
+#resultado{
+    background-color: #FFFFFF;
+    display: none;
+    border: none;
+    resize: none;
+    position: absolute;
+    height: 900px;
+    width: 400px;
+    left: 1470px;
+    top: 40px;
+    font-family: "Inter" normal;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#boton_copia{
+    visibility: hidden;
+    position: absolute;
+    left:  1570px;
+    top: 850px;
+    width: 200px;
+    height: 40px;
+    border-radius: 32px ;
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+@media (max-width:2146px) {
+    #panel_muestra{
+       left: 1100px
+
+    }
+  }
